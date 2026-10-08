@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#031B3C">
   <meta name="description" content="Reste. — une application de budget simple qui vous montre ce que vous avez aujourd’hui et ce qu’il devrait vous rester jusqu’au prochain revenu.">
+  <meta property="og:title" content="Reste. — Votre budget, sans brouillard.">
+  <meta property="og:description" content="Suivez votre solde réel, votre reste estimé et préparez vos paiements Apple Pay avec Raccourcis sur iPhone.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lefty2b.github.io/reste-site/">
   <title>Reste. — Votre budget, sans brouillard.</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -16,6 +20,7 @@
     </a>
     <nav>
       <a href="#fonctionnalites">Fonctionnalités</a>
+      <a class="nav-apple-pay" href="#apple-pay">Apple Pay</a>
       <a href="privacy.html">Confidentialité</a>
       <a href="support.html">Support</a>
     </nav>
@@ -123,6 +128,111 @@
           <div><span>Variable à réserver</span><strong>− 504 €</strong></div>
           <hr>
           <div class="result"><span>Reste estimé</span><strong>1 140 €</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="apple-pay" class="section apple-pay-section">
+      <div class="shell">
+        <div class="apple-pay-heading">
+          <div>
+            <p class="eyebrow">AUTOMATISATION IPHONE</p>
+            <h2>Payez avec Apple Pay.<br><span>Reste. prépare la suite.</span></h2>
+          </div>
+          <p class="section-intro">Une automatisation personnelle dans Raccourcis transmet le montant, le commerçant et la date à Reste. L’opération arrive dans votre centre de validation&nbsp;: vous gardez toujours le dernier mot.</p>
+        </div>
+
+        <div class="automation-flow" aria-label="Parcours d’un paiement Apple Pay vers Reste.">
+          <div class="flow-card">
+            <span class="flow-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img"><path d="M6.5 7.5h11a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-11a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2Z"/><path d="M7.5 7.5V6a2 2 0 0 1 2-2h5a2 2 0 0 1 2 2v1.5M4.5 11h15"/></svg>
+            </span>
+            <small>1 · PAIEMENT</small>
+            <strong>Apple Pay</strong>
+            <p>Vous réglez comme d’habitude avec votre iPhone.</p>
+          </div>
+          <span class="flow-arrow" aria-hidden="true">→</span>
+          <div class="flow-card shortcuts-card">
+            <span class="flow-icon shortcuts-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img"><path d="m8.5 4 7 4-7 4-4-2.3a2 2 0 0 1 0-3.4L8.5 4Z"/><path d="m15.5 12-7 4-4-2.3M15.5 8l4 2.3a2 2 0 0 1 0 3.4L15.5 16l-7 4-4-2.3"/></svg>
+            </span>
+            <small>2 · AUTOMATISATION</small>
+            <strong>Raccourcis</strong>
+            <p>iOS transmet uniquement les informations utiles.</p>
+          </div>
+          <span class="flow-arrow" aria-hidden="true">→</span>
+          <div class="flow-card reste-card">
+            <span class="flow-icon reste-icon" aria-hidden="true"><span>R</span></span>
+            <small>3 · À VÉRIFIER</small>
+            <strong>Reste.</strong>
+            <p>Vous contrôlez, catégorisez puis validez l’opération.</p>
+          </div>
+        </div>
+
+        <div class="shortcut-layout">
+          <div class="shortcut-steps">
+            <div class="shortcut-intro">
+              <p class="eyebrow">CONFIGURATION PAS À PAS</p>
+              <h3>À faire une seule fois.</h3>
+              <p>Comptez environ deux minutes. Les intitulés peuvent varier légèrement selon votre version d’iOS.</p>
+            </div>
+
+            <ol class="steps-list">
+              <li>
+                <span class="step-number">1</span>
+                <div><strong>Ouvrez les réglages dans Reste.</strong><p>Allez dans <b>Paramètres → Paiements Apple Pay</b>, puis touchez <b>Ouvrir Raccourcis</b>.</p></div>
+              </li>
+              <li>
+                <span class="step-number">2</span>
+                <div><strong>Créez une automatisation « Transaction ».</strong><p>Dans l’onglet <b>Automatisation</b>, touchez <b>+</b>, choisissez <b>Transaction</b>, puis sélectionnez la carte utilisée avec Apple Pay.</p></div>
+              </li>
+              <li>
+                <span class="step-number">3</span>
+                <div><strong>Choisissez l’exécution immédiate.</strong><p>Sélectionnez <b>Exécuter immédiatement</b> pour que la préparation se lance après le paiement, sans confirmation supplémentaire de Raccourcis.</p></div>
+              </li>
+              <li>
+                <span class="step-number">4</span>
+                <div><strong>Ajoutez l’action de Reste.</strong><p>Recherchez puis ajoutez <b>« Préparer une opération dans Reste. »</b>.</p></div>
+              </li>
+              <li>
+                <span class="step-number">5</span>
+                <div><strong>Associez les informations du paiement.</strong><p>Reliez le <b>montant</b>, le <b>commerçant</b> et la <b>date</b> fournis par la transaction, puis choisissez le compte Reste. concerné.</p></div>
+              </li>
+              <li>
+                <span class="step-number">6</span>
+                <div><strong>Enregistrez, c’est prêt.</strong><p>Après un prochain paiement, une opération à vérifier apparaîtra sur la carte <b>Disponible</b> dans Reste.</p></div>
+              </li>
+            </ol>
+          </div>
+
+          <aside class="shortcut-preview" aria-label="Aperçu de l’automatisation">
+            <div class="ios-window">
+              <div class="ios-status"><span>9:41</span><span>● ● ●</span></div>
+              <div class="ios-title"><span>‹</span><strong>Nouvelle automatisation</strong><span>•••</span></div>
+              <div class="trigger-card">
+                <span class="trigger-symbol">◈</span>
+                <div><small>QUAND</small><strong>J’effectue une transaction</strong><em>Carte sélectionnée · Apple Pay</em></div>
+              </div>
+              <div class="run-line"><span>Exécuter immédiatement</span><i aria-hidden="true"></i></div>
+              <div class="action-label">FAIRE</div>
+              <div class="action-card">
+                <span class="action-brand">R</span>
+                <div><strong>Préparer une opération</strong><small>dans Reste.</small></div>
+              </div>
+              <div class="mapping"><span>Montant</span><b>Montant de la transaction</b></div>
+              <div class="mapping"><span>Commerçant</span><b>Nom du commerçant</b></div>
+              <div class="mapping"><span>Compte</span><b>Compte courant</b></div>
+            </div>
+            <div class="privacy-note">
+              <span aria-hidden="true">✓</span>
+              <p><strong>Rien n’est enregistré sans vous.</strong> Reste. n’accède pas à votre banque et l’opération ne modifie vos comptes qu’après votre validation.</p>
+            </div>
+          </aside>
+        </div>
+
+        <div class="requirements">
+          <span>Requis</span>
+          <p>Un iPhone sous iOS 17 ou une version ultérieure, Reste. installé et une carte compatible avec les automatisations de transactions d’Apple Pay.</p>
         </div>
       </div>
     </section>
