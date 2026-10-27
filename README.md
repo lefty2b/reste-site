@@ -1,6 +1,6 @@
-# Reste. — site web
+# U Restu — site web
 
-Site public de présentation de l’application **Reste.**
+Site public de présentation de l’application **U Restu**
 
 Pages incluses :
 - accueil
